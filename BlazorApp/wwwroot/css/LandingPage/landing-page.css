@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  gap: 2vh;
+  align-items: stretch;
+}
+
+.map-layout {
+  flex-grow: 1;
+  background-color: white;
+  height:  85vh;
+  width: 50%;
+  min-width: 50%;
+}
+
+.listings {
+  flex-grow: 1;
+  background-color: white;
+  height:  85vh;
+  width: 50%;
+  min-width: 50%;
+}

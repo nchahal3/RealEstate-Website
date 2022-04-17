@@ -1,0 +1,197 @@
+.create-listing-wrapper {
+    position: relative;
+    padding: 20px;
+    margin-left: 10px;
+    display: grid;
+    /* grid-template-columns: repeat(6, 15.5%); */
+    /* grid-template-rows: 11% 11% 11% 7% 11% 11% 11%;*/
+}
+
+.map {
+    grid-column: 3 / 7;
+    grid-row: 1 / 5;
+    background-color: white;
+    border: 3px solid #333;
+}
+
+.map-div{
+    position: relative;
+    margin-left: 800px;
+    margin-bottom: 300px;
+}
+
+a {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+  
+.previous:hover {
+    background-color: rgb(148, 108, 108);
+    color: black;
+    transition: 0.5s ease;
+}
+  
+.previous {
+    border: 3px solid #333;
+    background-color: #f1f1f1;
+    color: black;
+}
+.round {
+    border-radius: 50%;
+}
+
+.create-listing-text{
+    padding: 10px;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+
+#propType{
+    height: 30px;
+    border: 1.5px solid #333;
+    border-radius: 40px;
+    background-color: rgba(229, 223, 223, 0.7);
+}
+
+#address{
+    width: 540px;
+    height: 30px;
+    border: 1.5px solid #333;
+    border-radius: 40px;
+    background-color: rgba(229, 223, 223, 0.7);
+}
+
+#province{
+    height: 30px;
+    border: 1.5px solid #333;
+    border-radius: 40px;
+    background-color: rgba(229, 223, 223, 0.7);
+}
+
+#postal-code{
+    height: 30px;
+    border: 1.5px solid #333;
+    border-radius: 40px;
+    background-color: rgba(229, 223, 223, 0.7);
+}
+
+#square-feet{
+    height: 30px;
+    border: 1.5px solid #333;
+    border-radius: 40px;
+    background-color: rgba(229, 223, 223, 0.7);
+}
+
+#bedrooms{
+    height: 30px;
+    border: 1.5px solid #333;
+    border-radius: 40px;
+    background-color: rgba(229, 223, 223, 0.7);
+}
+
+#bathrooms{
+    height: 30px;
+    border: 1.5px solid #333;
+    border-radius: 40px;
+    background-color: rgba(229, 223, 223, 0.7);
+}
+
+#city{
+    height: 30px;
+    border: 1.5px solid #333;
+    border-radius: 40px;
+    background-color: rgba(229, 223, 223, 0.7);
+}
+
+#year-built{
+    height: 30px;
+    border: 1.5px solid #333;
+    border-radius: 40px;
+    background-color: rgba(229, 223, 223, 0.7);
+}
+
+#price{
+    height: 30px;
+    border: 1.5px solid #333;
+    border-radius: 40px;
+    background-color: rgba(229, 223, 223, 0.7);
+}
+
+#general-description{
+    height: 120px;
+    width: 840px;
+    border: 1.5px solid #333;
+    border-radius: 40px;
+    background-color: rgba(229, 223, 223, 0.7);
+}
+
+.line-i{
+    margin-bottom: 10px;
+}
+
+label {
+    padding: 10px;
+    margin-right: 30px;
+    display: inline;
+    width: 150px;
+    text-align: left;
+}
+
+.next-btn{
+    height: 30px;
+    width: 80px;
+    border: 3px solid #333;
+    border-radius: 40px;
+}
+.btn1{
+    position: absolute;
+    right:    0;
+    bottom:   0;
+}
+
+#province-i{
+    max-width: 400px;
+    padding: 8px;
+}
+
+#city-i{
+    max-width: 400px;
+    padding: 8px;
+}
+
+#address-i{
+    padding: 8px;
+
+}
+
+#prop-i{
+    padding: 8px;
+}
+
+#postal-i{
+    padding: 8px;
+}
+#prop-i{
+    padding: 8px;
+}
+#square-i{
+    padding: 8px;
+}
+#price-i{
+    padding: 8px;
+}
+#bed-i{
+    padding: 8px;
+}
+#bath-i{
+    padding: 8px;
+}
+#general-i{
+    padding: 8px;
+}

@@ -1,0 +1,155 @@
+@page "/CreateListings1"
+
+@* @inject IJSRuntime JSRuntime *@
+
+<link href="css/Listings/createListing.css" rel="stylesheet"/>
+@* <link href="css/Details/details-minimap.css" rel="stylesheet" /> *@
+
+<body style = " background-size: cover;">
+    <table>
+        <tr>
+            <td>
+            <a href="#" class="previous round">&#8592;</a>
+            </td>
+            <td>
+            <h1 class = "create-listing-text">Create a Listing</h1>
+            </td>
+        </tr>
+    </table>
+
+    <div class = "create-listing-wrapper">
+
+        <form>
+            <!--Property Type-->
+            <div class = "line-i" id = "prop-i">
+                <label for = "propType" style = "font-size: 20px;">Property Type:</label>
+                <select name="propType" id="propType">
+                    <option value="None"></option>
+                    <option value="Condo">Condo</option>
+                    <option value="Duplex">Duplex</option>
+                    <option value="Townhouses">Townhouses</option>
+                    <option value="Single-House">Single Family Home</option>
+                </select>
+            </div>
+
+             <!--Address-->
+            <div class = "line-i" id = "address-i">
+            <label for = "address" style = "font-size: 20px;">Address:</label>
+            <input type = "text" id = "address" name = "address">
+            </div>
+
+            <table>
+                <tr>
+                    <td>
+                         <!--Province-->
+                        <div class = "line-i" id = "province-i">
+                        <label for = "province" style = "font-size: 20px;">Province:</label>
+                        <select name="province" id="province">
+                            <option value="none"></option>
+                            <option value="alberta">Alberta</option>
+                            <option value="bc">British Columbia</option>
+                            <option value="saskatchewan">Saskatchewan</option>
+                            <option value="manitoba">Manitoba</option>
+                            <option value="ontario">Ontario</option>
+                            <option value="quebec">Quebec</option>
+                            <option value="newfoundland and Labrador">Newfoundland and Labrador</option>
+                            <option value="northwest Territories">Northwest Territories</option>
+                            <option value="new Brunswick">New Brunswick</option>
+                            <option value="nova Scotia">Nova Scotia</option>
+                            <option value="nunavut">Nunavut</option>
+                            <option value="yukon">Yukon</option>
+                            <option value="pei">Prince Edward Island</option>  
+                        </select>
+                    </div>
+                    </td>
+                    <td>
+                        <!--City-->
+                        <div class = "line-i" id = "city-i">
+                            <label for = "city" style = "font-size: 20px;">City:</label>
+                            <input type = "text" id = "city" name = "city">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td>
+                        <!--Postal Code-->
+                        <div class = "line-i" id = "postal-i">
+                            <label for = "postal-code" style = "font-size: 20px;">Potal Code:</label>
+                            <input type = "text" id = "postal-code" name = "postal-code">
+                        </div>
+                    </td>
+                    <td>
+                        <!--Year Built-->
+                        <div class = "line-i" id = "built-i">
+                            <label for = "year-built" style = "font-size: 20px;">Year Built:</label>
+                            <input type = "text" id = "year-built" name = "year-built">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+
+            <table>
+                <tr>
+                    <td>
+                         <!--Square Feet-->
+                        <div class = "line-i" id = "square-i">
+                            <label for = "square-feet" style = "font-size: 20px;">Square Feet:</label>
+                            <input type = "text" id = "square-feet" name = "square-feet">
+                        </div>
+                    </td>
+                    <td>
+                        <!--Price-->
+                        <div class = "line-i" id = "price-i">
+                            <label for = "price" style = "font-size: 20px;">Price:</label>
+                            <input type = "text" id = "price" name = "price">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <!--Bedrooms-->
+            <div class = "line-i" id = "bed-i">
+            <label for = "bedrooms" style = "font-size: 20px;">Bedrooms:</label>
+            <input type = "text" id = "bedrooms" name = "bedrooms">
+            </div>
+
+            <!--Bathrooms-->
+            <div class = "line-i" id = "bath-i">
+            <label for = "bathrooms" style = "font-size: 20px;">Bathrooms:</label>
+            <input type = "text" id = "bathrooms" name = "bathrooms">
+            </div>
+
+            <!--General Description-->
+            <div class = "line-i" id = "general-i">
+            <label for = "general-description" style = "font-size: 20px;">General Description:</label>
+            <input type = "text" id = "general-description" name = "general-description">
+            </div>
+        </form>
+
+        <div>
+        <a href = "http://localhost:5211/CreateListings2" class = "btn1">
+        <button type="button"  class = "next-btn">Next</button> 
+        </a>
+        </div>
+
+
+    @* <div>
+        <div id="map" style="height:500px; width:500px; margin:20px"></div>
+    </div> *@
+
+    </div>
+</body>
+
+<!-- @* @code{
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("initialize", null); 
+        }
+    }
+} *@ -->

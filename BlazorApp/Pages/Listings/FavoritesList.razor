@@ -1,0 +1,67 @@
+<div class="scroll" style="height:90%">
+    @if(listings != null)
+    {
+        @foreach (var listing in listings)
+        {
+            if(Candidate != null)
+            {
+                <FavoriteListing ListDetails=@listing OnRemove=@removeId OnRank=@updateRanks Candidate=@Candidate></FavoriteListing>
+            }
+            else
+            {
+                <FavoriteListing ListDetails=@listing OnRemove=@removeId OnRank=@updateRanks></FavoriteListing>
+            }
+        }
+    }
+</div>
+
+@code {
+    [Parameter]
+    public HouseListing Candidate { get; set; }
+    List<HouseListing> listings;
+    
+    HttpClient httpClient = new HttpClient();
+
+    protected override async Task OnInitializedAsync()
+    {
+        listings = await httpClient.GetFromJsonAsync<List<HouseListing>>("http://localhost:5211/myListings.json");
+
+        if(listings != null)
+        {
+            for(int i = listings.Count - 1; i > -1; i--)
+            {
+                if(!listings.ElementAt(i).Favorited)
+                {
+                    listings.RemoveAt(i);
+                }
+            }
+        }
+    }
+
+    async void updateRanks()
+    {
+        listings = await httpClient.GetFromJsonAsync<List<HouseListing>>("http://localhost:5211/listingsRankImprovement.json");
+
+        if(listings != null)
+        {
+            for(int i = listings.Count - 1; i > -1; i--)
+            {
+                if(!listings.ElementAt(i).Favorited)
+                {
+                    listings.RemoveAt(i);
+                }
+            }
+        }
+    }
+
+    void removeId(int id)
+    {
+        for(int i = 0; i < listings.Count; i++)
+        {
+            if(listings.ElementAt(i).Id == id)
+            {
+                listings.RemoveAt(i);
+            }
+        }
+    }
+}

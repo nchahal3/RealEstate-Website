@@ -1,0 +1,292 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BlazorApp
+build_property.RootNamespace = BlazorApp
+build_property.ProjectDir = /Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/AccountCreation/CalendarView.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWNjb3VudENyZWF0aW9uL0NhbGVuZGFyVmlldy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/AccountCreation/CreateAccount.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWNjb3VudENyZWF0aW9uL0NyZWF0ZUFjY291bnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/AccountCreation/CreateAccountMainPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWNjb3VudENyZWF0aW9uL0NyZWF0ZUFjY291bnRNYWluUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/AccountCreation/CreateRealtorAccount.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWNjb3VudENyZWF0aW9uL0NyZWF0ZVJlYWx0b3JBY2NvdW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/AccountCreation/CreateRealtorAccount2.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWNjb3VudENyZWF0aW9uL0NyZWF0ZVJlYWx0b3JBY2NvdW50Mi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/AccountCreation/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWNjb3VudENyZWF0aW9uL0xvZ2luLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/Chat/ChatView.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2hhdC9DaGF0Vmlldy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/Details/Custom.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGV0YWlscy9DdXN0b20ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/Details/Description.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGV0YWlscy9EZXNjcmlwdGlvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/Details/ExternalLinks.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGV0YWlscy9FeHRlcm5hbExpbmtzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/Details/GeneralDescription.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGV0YWlscy9HZW5lcmFsRGVzY3JpcHRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/Details/ListingDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGV0YWlscy9MaXN0aW5nRGV0YWlscy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/Details/MiniMap.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGV0YWlscy9NaW5pTWFwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/Details/Pictures.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGV0YWlscy9QaWN0dXJlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/Details/Status.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGV0YWlscy9TdGF0dXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/Details/TestimonialEntry.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGV0YWlscy9UZXN0aW1vbmlhbEVudHJ5LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/Details/Testimonials.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGV0YWlscy9UZXN0aW1vbmlhbHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/Details/Thumbnail.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGV0YWlscy9UaHVtYm5haWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/EditViews/EditProfile.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRWRpdFZpZXdzL0VkaXRQcm9maWxlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/EditViews/EditRealtorProfile1.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRWRpdFZpZXdzL0VkaXRSZWFsdG9yUHJvZmlsZTEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/EditViews/EditRealtorProfile2.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRWRpdFZpZXdzL0VkaXRSZWFsdG9yUHJvZmlsZTIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/LandingPage/Filter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGFuZGluZ1BhZ2UvRmlsdGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/LandingPage/LandingList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGFuZGluZ1BhZ2UvTGFuZGluZ0xpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/LandingPage/LandingListingCard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGFuZGluZ1BhZ2UvTGFuZGluZ0xpc3RpbmdDYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/LandingPage/LandingListings.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGFuZGluZ1BhZ2UvTGFuZGluZ0xpc3RpbmdzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/LandingPage/LandingMap.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGFuZGluZ1BhZ2UvTGFuZGluZ01hcC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/LandingPage/LandingPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGFuZGluZ1BhZ2UvTGFuZGluZ1BhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/LandingPage/Search.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGFuZGluZ1BhZ2UvU2VhcmNoLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/Listings/Candidate.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlzdGluZ3MvQ2FuZGlkYXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/Listings/CreateListing1.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlzdGluZ3MvQ3JlYXRlTGlzdGluZzEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/Listings/FavoriteListing.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlzdGluZ3MvRmF2b3JpdGVMaXN0aW5nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/Listings/Favorites.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlzdGluZ3MvRmF2b3JpdGVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/Listings/FavoritesCompare.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlzdGluZ3MvRmF2b3JpdGVzQ29tcGFyZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/Listings/FavoritesList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlzdGluZ3MvRmF2b3JpdGVzTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/Listings/Listing.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlzdGluZ3MvTGlzdGluZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/Listings/ListingSearch.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlzdGluZ3MvTGlzdGluZ1NlYXJjaC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/Listings/ListView.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlzdGluZ3MvTGlzdFZpZXcucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/Listings/MyListings.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlzdGluZ3MvTXlMaXN0aW5ncy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/Listings/MyListingSearch.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlzdGluZ3MvTXlMaXN0aW5nU2VhcmNoLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/Listings/SimilarList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlzdGluZ3MvU2ltaWxhckxpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/Listings/SimilarListing.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlzdGluZ3MvU2ltaWxhckxpc3RpbmcucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/Listings/Similars.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlzdGluZ3MvU2ltaWxhcnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/Listings/SimilarSearch.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlzdGluZ3MvU2ltaWxhclNlYXJjaC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/Progress/Progress.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZ3Jlc3MvUHJvZ3Jlc3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/RealtorSearch/RealtorCard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVhbHRvclNlYXJjaC9SZWFsdG9yQ2FyZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/RealtorSearch/RealtorList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVhbHRvclNlYXJjaC9SZWFsdG9yTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/RealtorSearch/RealtorListings.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVhbHRvclNlYXJjaC9SZWFsdG9yTGlzdGluZ3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/RealtorSearch/RealtorPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVhbHRvclNlYXJjaC9SZWFsdG9yUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/RealtorSearch/RealtorSide.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVhbHRvclNlYXJjaC9SZWFsdG9yU2lkZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/RealtorSearch/Search.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVhbHRvclNlYXJjaC9TZWFyY2gucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Shared/ConfirmUnlistModal.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0NvbmZpcm1Vbmxpc3RNb2RhbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Shared/Dropdown.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0Ryb3Bkb3duLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Shared/DropdownListItem.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0Ryb3Bkb3duTGlzdEl0ZW0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Shared/ExternalServiceWarning.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0V4dGVybmFsU2VydmljZVdhcm5pbmcucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Shared/GenericListing.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0dlbmVyaWNMaXN0aW5nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Shared/Menu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Shared/MenuItem.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01lbnVJdGVtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1N1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Shared/TestimonialMenuItem.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1Rlc3RpbW9uaWFsTWVudUl0ZW0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Shared/TestimonialModal.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1Rlc3RpbW9uaWFsTW9kYWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-3ij3p7wwc4
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-wk4bcz64v1
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Mary/Desktop/Winter 2022/CPSC 481/CPSC481_G2_FinalReport/Bond-Estate-Real-Estate-main/BlazorApp/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

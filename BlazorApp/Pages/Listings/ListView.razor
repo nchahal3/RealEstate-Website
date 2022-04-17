@@ -1,0 +1,20 @@
+<div class="scroll" style="height:90%">
+    @if(listings != null)
+    {
+        @foreach (var listing in listings)
+        {
+            <Listing ListDetails=@listing></Listing>
+        }
+    }
+</div>
+
+@code {
+    List<HouseListing> listings;
+
+    HttpClient httpClient = new HttpClient();
+
+    protected override async Task OnInitializedAsync()
+    {
+        listings = await httpClient.GetFromJsonAsync<List<HouseListing>>("http://localhost:5211/myListings.json");
+    }
+}

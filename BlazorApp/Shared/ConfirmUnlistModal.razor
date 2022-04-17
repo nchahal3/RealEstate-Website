@@ -1,0 +1,27 @@
+
+<div>
+    <div class="danger-text">
+        Are you sure you want to unlist:
+    </div>
+    <div class="bold-text">
+        @Address
+    </div>
+    <br>
+    <div class="danger-text">
+        This action cannot be undone.
+    </div>
+    <br>
+    <button @onclick="Close" class="btn btn-danger" style="font-size:20px">Yes, Unlist</button>
+    <button @onclick="Cancel" class="btn btn-secondary" style="font-size:20px; margin-left:20px">Cancel</button>
+</div>
+
+@code {
+
+    [Parameter]
+    public string Address { get; set; }
+    [CascadingParameter] BlazoredModalInstance BlazoredModal { get; set; } = default!;
+
+    async Task Close() => await BlazoredModal.CloseAsync(ModalResult.Ok(true));
+    async Task Cancel() =>await BlazoredModal.CancelAsync();
+
+}

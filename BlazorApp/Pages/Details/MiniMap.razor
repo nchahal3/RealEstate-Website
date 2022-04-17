@@ -1,0 +1,43 @@
+@inject IJSRuntime JSRuntime
+
+<link href="css/Details/details-minimap.css" rel="stylesheet" />
+
+<div class="minimap-wrapper">
+    <div class="minimap-checkboxes">
+        <div class="bold-text buffered">Nearby Amenities</div>
+        <div class="form-check" style="margin-left:30px; margin-bottom:15px">
+        <input class="form-check-input" onclick="parks()" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" style="font-size: 20px" for="flexCheckDefault">
+            Parks
+        </label>
+        </div>
+        <div class="form-check" style="margin-left:30px; margin-bottom:15px">
+        <input class="form-check-input" onclick="schools()" type="checkbox" value="" id="flexCheckChecked">
+        <label class="form-check-label" style="font-size: 20px" for="flexCheckChecked">
+            Schools
+        </label>
+        </div>
+        <div class="form-check" style="margin-left:30px; margin-bottom:15px">
+        <input class="form-check-input" onclick="gyms()" type="checkbox" value="" id="flexCheckChecked1">
+        <label class="form-check-label" style="font-size: 20px" for="flexCheckChecked1">
+            Gyms
+        </label>
+        </div>
+        <div class="form-check" style="margin-left:30px; margin-bottom:15px">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2">
+        <label class="form-check-label" style="font-size: 20px" for="flexCheckChecked2">
+            Shopping Malls
+        </label>
+        </div>
+        <div class="form-check" style="margin-left:30px; margin-bottom:15px">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3">
+        <label class="form-check-label" style="font-size: 20px" for="flexCheckChecked3">
+            Hospitals
+        </label>
+        </div>
+    </div>
+    <div class="minimap-display">
+        <img id="minimap-img" src="/minimap/none.png" alt="filtered" style="height:40vh; width:100%; bottom: 0; left:0; object-fit: cover; object-position: left bottom; margin:20px">
+        <!-- <div id="map" style="height:120%; width:100%; margin:20px"></div> -->
+    </div>
+</div>

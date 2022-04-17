@@ -1,0 +1,62 @@
+@inject IJSRuntime JSRuntime
+
+<link href="css/RealtorPage/realtor-page.css" rel="stylesheet" />
+
+<div class="listings-wrapper content">
+    <div class="listing-list" style="height:10vh;"><Filter></Filter>
+    </div>
+
+
+
+</div>
+<hr/>
+
+<table>
+
+<td>
+  <div style="background-color:white; position:relative;">
+  <img src="/Images/realtor.jpg" style="width:auto;height:500px;margin:auto;border-radius: 100px;">
+</div>
+
+<div style="margin-left:160px; display:flex;">
+  <h2>Lisa Anderson</h2>
+  <br>
+</div>
+
+<div style="margin-left:120px; display:flex;">
+  <h3>From Calgary, Canada</h3>
+  <br>
+
+</div>
+<div style="margin-left:20px; display:flex;">
+      <br /><br />
+      <button type="submit" class="chatbtn" style="margin:auto; width: 50%;">Chat with me!</button>
+</div>
+
+
+</td>
+<td>
+   <div style="margin-left:200px; margin-right: 50px; text-align:justify;">
+  <h3><br><br><br><br><br><br>10 years of experience, multiple happy clients. I have a passion for working in real estate and hope to find you your dream home!</h3>
+  <br>
+  <br>
+  <br>
+  <h3>Spoken Languages: &nbsp;&nbsp;&nbsp; English, French <br><br><br><br><br><br></h3>
+</div>
+
+<div style="margin-left:20px; display:flex;">
+      <br /><br />
+      <button type="submit" class="meetingbtn" style="margin:auto; width: 30%;">Book a meeting!</button>
+</div>
+
+
+</td>
+
+</table>
+
+
+
+@code {
+    [Parameter]
+    public Realtors RealtorDetails { get; set; }
+}

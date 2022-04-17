@@ -1,0 +1,5 @@
+.map-wrapper {
+  flex-grow: 1;
+  margin: auto;
+  width: 100%;
+}

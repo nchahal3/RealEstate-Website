@@ -1,0 +1,41 @@
+
+<div>
+    <p>Create a testimonial for your community to help others learn more about what it is like to live in the area.</p>
+    <div class="bold-text">
+        Your Community
+    </div>
+    @{ var list = new List<string>{ "Brentwood", "Charleswood", "Varsity" }; }
+    <Dropdown TItem="string" OnSelected="@OnSelected" >
+        <InitialTip>Neighbourhood Select</InitialTip>
+        <ChildContent>
+            <DropdownListItem Item="@list[0]">Brentwood</DropdownListItem>
+            <DropdownListItem Item="@list[1]">Charleswood</DropdownListItem>
+            <DropdownListItem Item="@list[2]">Varsity</DropdownListItem>
+        </ChildContent>
+    </Dropdown>
+    <br>
+    <div class="bold-text">
+        Your Testimonial
+    </div>
+    <div class="form-group">
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <br>
+    <button @onclick="Close" class="btn btn-primary" style="font-size:20px">Submit</button>
+    <button @onclick="Cancel" class="btn btn-secondary" style="font-size:20px">Cancel</button>
+</div>
+
+@code {
+
+    public string selectedNeighbourhood = "Neighbourhood Select";
+    [CascadingParameter] BlazoredModalInstance BlazoredModal { get; set; } = default!;
+
+    async Task Close() => await BlazoredModal.CloseAsync(ModalResult.Ok(true));
+    async Task Cancel() =>await BlazoredModal.CancelAsync();
+
+    private void OnSelected(string selection)
+    {
+        Console.WriteLine(selection);
+    }
+
+}

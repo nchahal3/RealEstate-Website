@@ -1,0 +1,12 @@
+.minimap-wrapper {
+    display: grid;
+    grid-template-columns: 25% 70%;
+}
+
+.minimap-checkboxes {
+    grid-column: 1;
+}
+
+.minimap-display {
+    grid-column: 2;
+}

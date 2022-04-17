@@ -1,0 +1,27 @@
+[
+{
+    "ImgSrc": "Images/profile.png",
+    "Name": "Thomas Anderson",
+    "Description": "This neighbourhood is wonderful. I would recommend this area to any young family."
+},
+{
+    "ImgSrc": "Images/profile.png",
+    "Name": "Derek Braun",
+    "Description": "Very family friendly, not much of an older generation."
+},
+{
+    "ImgSrc": "Images/profile.png",
+    "Name": "Bruce Banner",
+    "Description": "Lots of access to nearby parks."
+},
+{
+    "ImgSrc": "Images/profile.png",
+    "Name": "Bart Allen",
+    "Description": "Schools are walking distance which makes it great for young families."
+},
+{
+    "ImgSrc": "Images/profile.png",
+    "Name": "Diana Prince",
+    "Description": "The nearest shopping mall is a 10 minute drive away."
+}
+]

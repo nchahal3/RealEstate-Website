@@ -1,0 +1,15 @@
+.listing-wrapper {
+    display: grid;
+    grid-template-rows: 13% 80%;
+  }
+
+  .listing-search {
+    grid-row: 1;
+    background-color: rgb(168, 168, 168);
+    border-radius: 10px;
+  }
+
+  .listing-list {
+    grid-row: 2;
+    background-color: white;
+  }

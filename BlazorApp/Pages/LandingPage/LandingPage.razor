@@ -1,0 +1,16 @@
+@page "/home/"
+@using Blazored.Modal
+
+<link href="css/LandingPage/landing-page.css" rel="stylesheet" />
+
+<div class="wrapper" style="height:95vh">
+  <div class="map-layout smooth-corners"><LandingMap></LandingMap></div>
+  <div class="listings smooth-corners"><LandingListings></LandingListings></div>
+</div>
+
+@code{
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+    }
+}

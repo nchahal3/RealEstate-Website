@@ -1,0 +1,19 @@
+@page "/mylistings"
+
+<link href="css/Listings/list-view.css" rel="stylesheet" />
+
+<div class="listing-wrapper" style="width:95vw; height:95vh">
+    <div class="listing-search bold-text" style="font-size:30px; color:white; padding:40px">Manage and Edit Your Listings</div>
+    <div class="listing-list"><ListView></ListView></div>
+</div>
+
+@code{
+    [Parameter]
+    public int listingId { get; set; } = 0;
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+    }
+}
+

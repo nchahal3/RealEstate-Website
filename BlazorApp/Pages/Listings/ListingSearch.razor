@@ -1,0 +1,55 @@
+<link href="css/Listings/listing-search.css" rel="stylesheet" />
+
+<div class="listing-search-wrapper" style="">
+    <div class="search-container">
+        <nav class="navbar" style="height:100px; width: 100vh">
+            <div class="input-group" style="margin-left:30px; margin-top: 20px;">
+                <div class="bold-text" style="color:white; margin-top:5px; font-size:30px">
+                    Rank and Sort Your Favorites:
+                </div>
+                @{ var list = new List<string>{ "Ranking", "Price", "# Beds", "# Baths", "Sq Footage" }; }
+                <div style="padding-left: 30px; padding-top: 5px;">
+                    <Dropdown TItem="string" OnSelected="@OnSelected">
+                        <InitialTip>Sort By:</InitialTip>
+                        <ChildContent>
+                            <DropdownListItem Item="@list[0]">Ranking</DropdownListItem>
+                            <DropdownListItem Item="@list[1]">Price</DropdownListItem>
+                            <DropdownListItem Item="@list[2]"># Beds</DropdownListItem>
+                            <DropdownListItem Item="@list[3]"># Baths</DropdownListItem>
+                            <DropdownListItem Item="@list[4]">Sq Footage</DropdownListItem>
+                        </ChildContent>
+                    </Dropdown>
+                </div>
+                <div style="margin-top:10px; margin-left:20px; font-size: 20px;">
+                    from
+                </div>
+                <div class="bold-text" style="margin-top:10px; margin-left:20px; font-size: 20px;">
+                    Low to High
+                </div>
+                <div class="form-check form-switch" style="margin-left:20px; margin-top:12px;">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                </div>
+                <div class="bold-text" style="margin-top:10px; margin-left:20px; font-size: 20px;">
+                    High to Low
+                </div>
+                @* <div class="form-check form-check-inline" style="margin-top:10px; margin-left:20px">
+                <input class="form-check-input" type="radio" id="inlineCheckbox1" name="radios" value="option1">
+                <label class="form-check-label bold-text" for="inlineCheckbox1">Low to High</label>
+                </div>
+                <div class="form-check form-check-inline" style="margin-top:10px">
+                <input class="form-check-input" type="radio" id="inlineCheckbox2" name="radios" value="option2">
+                <label class="form-check-label bold-text" for="inlineCheckbox2">High to Low</label>
+                </div> *@
+            </div>
+        </nav>
+    </div>
+</div>
+
+
+@code {
+    private void OnSelected(string selection)
+    {
+        Console.WriteLine(selection);
+    }
+
+}

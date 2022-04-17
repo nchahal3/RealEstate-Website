@@ -1,0 +1,59 @@
+<link href="css/LandingPage/landing-list-card.css" rel="stylesheet" />
+
+@if(ListDetails != null)
+{
+<div class="card">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-9">
+            <img class="card-img-top" src=@ListDetails.MainImgSrc alt="Card image cap">
+            </div>
+            <div class="col-3">
+                <div class="row right-row">
+                    <img class="card-img-top" src=@ListDetails.MainImgSrc alt="Card image cap">
+                </div>
+                <div class="row right-row">
+                    <img class="card-img-top" src=@ListDetails.MainImgSrc alt="Card image cap">
+                </div>
+                <div class="row">
+                    <img class="card-img-top" src=@ListDetails.MainImgSrc alt="Card image cap">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-11 no-padding">
+                <h5 class="card-title" style="font-weight: bold;">@ListDetails.Price</h5>
+                <p class="card-text">@ListDetails.Bedrooms Bedrooms, @ListDetails.Bathrooms Bath, @ListDetails.SQFT sqft<br><div style="font-weight: bold;">@ListDetails.Address</div></p>
+            </div>
+            <div class="col-1 no-padding flex-column">
+                @if(ListDetails.Favorited)
+                {
+                    <img src="images/removeFavorite.png" class="p-2 icon-image no-padding remove-bottom-margin float-end" width="50" height="50">
+                }
+                else
+                {
+                    <img src="images/addFavorite.png" class="p-2 icon-image no-padding remove-bottom-margin float-end" width="50" height="50">
+                }
+                <img src="images/chat.png" class="p-2 icon-image no-padding float-end"  width="50" height="50">
+            </div>
+        </div>
+        <p class="card-text add-padding-top">@ListDetails.LongDetails</p>
+        <a href="/details/@ListDetails.Id"><button type="button" class="btn btn-secondary float-end">More Details</button></a>
+    </div>
+</div>
+}
+
+@code {
+    [Parameter]
+    public HouseListing ListDetails { get; set; }
+
+    [CascadingParameter] public IModalService Modal { get; set; } = default!;
+    void ShowModal(string address)
+    {
+        var parameters = new ModalParameters();
+        parameters.Add(nameof(ConfirmUnlistModal.Address), address);
+        Modal.Show<ConfirmUnlistModal>("Confirm Action", parameters);
+    }
+}

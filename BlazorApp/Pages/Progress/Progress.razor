@@ -1,0 +1,33 @@
+@page "/progress"
+
+<div style="height:100vh">
+    <center><h1 style="font-weight:bold; margin-bottom: 30px;">Current Progress</h1></center>
+    @if(listings != null)
+    {
+        <GenericListing ListDetails=@listings.ElementAt(0)></GenericListing>
+    }
+
+    <div style="display: flex; justify-content: center; background-color: white; padding: 50px; border-radius: 20px">
+        <img src="Images/progressTimeline1.jpg">
+    </div>
+    <div>
+        <div class="input-group" style="display: flex; justify-content: center; margin-top:30px;">
+            <a href="/details/1"><button type="button" class="btn btn-danger" style="font-size:20px; width:200px; height:50px;">Undo Step</button></a>
+            <a href="/progress"><button type="button" class="btn btn-success" style="font-size:20px; margin-left: 20px; width:200px; height:50px;">Next Step</button></a>
+        </div>
+        <div>
+            <a href="/progress"><button type="button" class="btn btn-secondary" style="font-size:20px; margin-left: 20px; width:200px; height:50px;">Edit Dates</button></a>
+        </div>
+    </div>
+</div>
+
+@code {
+    List<HouseListing> listings;
+    
+    HttpClient httpClient = new HttpClient();
+
+    protected override async Task OnInitializedAsync()
+    {
+        listings = await httpClient.GetFromJsonAsync<List<HouseListing>>("http://localhost:5211/myListings.json");
+    }
+}

@@ -1,0 +1,53 @@
+﻿@inherits LayoutComponentBase
+
+<PageTitle>BlazorApp</PageTitle>
+
+<div class="page">
+    <main>
+        <nav class="navbar navbar-dark bg-dark" style="min-height:80px;">
+            <a class="navbar-brand" href="#" style="padding-left:10px">
+                <img src="/Images/Logo.JPG" width="150" height="60"/>
+            </a>
+            <div>
+                <a href="/home"><button class="btn btn-secondary" style="margin-right:30px; height:60px; font-size:20px; font-weight:bold" type="button"><img src="Images/mapIcon.png" height=40 width=40 style="margin-right:15px">Map</button></a>
+                <a href="/realtors"><button class="btn btn-danger" style="margin-right:30px; height:60px; font-size:20px; font-weight:bold" type="button">Find Realtor</button></a>
+                <a href="#"><button class="btn btn-success" style="margin-right:30px; height:60px; font-size:20px; font-weight:bold" type="button">Create Listing</button></a>
+                @{ var list = new List<string>{ "testimonial", "favorites", "listings", "profile" }; }
+                @if(signedIn)
+                {
+                    <a href="/chatView"><img src="/Images/chat.png" width="60" height="60" style="margin-left:20px"></a>
+                    <img src="/Images/user.png" width="60" height="60" style="margin-left:20px">
+                    <Menu TItem="string" OnSelected="@OnSelected" >
+                        <ChildContent>
+                            <TestimonialMenuItem Item="@list[0]">Add a Testimonial</TestimonialMenuItem>
+                            <div class="dropdown-divider"></div>
+                            <a href="/favorites"><MenuItem Item="@list[1]">My Favorites</MenuItem></a>
+                            <div class="dropdown-divider"></div>
+                            <a href="/mylistings"><MenuItem Item="@list[2]">My Posted Listings</MenuItem></a>
+                            <div class="dropdown-divider"></div>
+                            <a href="/editprofile"><MenuItem Item="@list[2]">Edit Profile</MenuItem></a>
+                        </ChildContent>
+                    </Menu>
+                    @* <img src="/Images/menu.png" width="60" height="60" style="margin-left:20px; margin-right:30px;"> *@
+                }
+                else
+                {
+                    <a href="/login" ><button class="btn btn-primary" style="margin-right:30px; margin-left:20px" type="button">Sign Up / Sign In</button></a>
+                }
+            </div>
+        </nav>
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+
+@code {
+    bool signedIn = true;
+
+    private void OnSelected(string selection)
+    {
+        Console.WriteLine(selection);
+    }
+}

@@ -1,0 +1,19 @@
+<nav class="navbar" style="min-height:80%">
+    <div>
+        <a href="/similar"><button class="btn btn-success" style="height:50px; margin-left: 20px; font-size:20px; font-weight: bold;" type="button">View More Listings Like This</button></a>
+        @if(House.Favorited)
+        {
+            <a><img src="images/removeFavorite.png" style="margin-left:30px" width="60" height="60"></a>
+        }
+        else
+        {
+            <a><img src="images/addFavorite.png" style="margin-left:30px" width="60" height="60"></a>
+        }
+        <a><img src="images/chat.png" style="margin-left:30px" width="60" height="60"></a>
+    </div>
+</nav>
+
+@code{
+    [Parameter]
+    public HouseListing House { get; set; }
+}

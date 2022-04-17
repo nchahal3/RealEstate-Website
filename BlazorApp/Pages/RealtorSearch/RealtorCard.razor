@@ -1,0 +1,19 @@
+<link href="css/RealtorPage/realtor-list-card.css" rel="stylesheet" />
+
+@if(RealtorDetails != null)
+{
+<div  class="wrapper-realtor" style="align-right; padding: 20px;background-size:contain;">
+
+        <img class="card-img-top" src=@RealtorDetails.MainImgSrc>
+        <div style="align-right"><br /><h3>@RealtorDetails.Name</h3><h4>Realtor</h4></div>
+
+</div>
+
+<hr>
+
+}
+
+@code {
+    [Parameter]
+    public Realtors RealtorDetails { get; set; }
+}

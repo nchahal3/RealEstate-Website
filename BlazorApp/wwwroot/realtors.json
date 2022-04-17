@@ -1,0 +1,34 @@
+[
+  {
+    "Name": "Lisa Anderson",
+    "Description": "10 years of experience",
+    "Location": "Calgary, Canada",
+    "Clients": 10,
+    "MainImgSrc":  "Images/realtor.jpg",
+    "Languages" :  "English, French"
+  },
+  {
+    "Name": "Alyssa Schmidt",
+    "Description": "12 years of experience",
+    "Location": "Toronto, Canada",
+    "Clients": 14,
+    "MainImgSrc": "Images/realtor.jpg",
+    "Languages": "English"
+  },
+  {
+    "Name": "John Rittler",
+    "Description": "2 years of experience",
+    "Location": "Calgary, Canada",
+    "Clients": 1,
+    "MainImgSrc": "Images/realtor.jpg",
+    "Languages": "English"
+  },
+  {
+    "Name": "Steph Holming",
+    "Description": "3 years of experience",
+    "Location": "Calgary, Canada",
+    "Clients": 3,
+    "MainImgSrc": "Images/realtor.jpg",
+    "Languages": "English, Spanish"
+  }
+]

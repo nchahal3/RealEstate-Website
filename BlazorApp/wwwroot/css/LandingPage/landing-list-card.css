@@ -1,0 +1,90 @@
+.listing-entry-wrapper {
+    display: grid;
+    grid-template-columns: 20% 68% 10%
+}
+.listing-entry-image {
+    grid-column: 1;
+    background-color: lightgray;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.landing-listing-entry-details {
+    grid-column: 2;
+    border-width: 0 10px;
+    border-top: solid rgb(185, 185, 185);
+    border-bottom: solid rgb(185, 185, 185);
+    border-left: solid rgb(185, 185, 185);
+}
+.listing-entry-actions {
+    grid-column: 3;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-width: 0 10px;
+    border: solid rgb(185, 185, 185);
+}
+
+.share-center {
+    display: flex;
+    justify-content: center;
+}
+
+.horizontal-center {
+    margin: 0;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.big-listing-button {
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    height: 80px;
+    width: 10px;
+}
+
+.card-img-top {
+    padding-top: 10.8pt;
+    padding-left: 0pt;
+    padding-right: 0pt;
+}
+
+.row {
+    width: 100%;
+    margin: auto;
+}
+
+.right-row {
+    padding: 0pt;
+    margin: 0pt;
+}
+
+
+.container-fluid {
+    padding: 0pt;
+}
+
+.card {
+    margin: 5pt;
+}
+
+.no-padding {
+    padding: 0pt;
+}
+
+.add-padding-top {
+    padding-top: 7pt;
+}
+
+.icon-image {
+    display: flex;
+    justify-content: right;
+}
+
+.remove-bottom-margin {
+    margin-bottom: -8pt;
+}
+
+.no-margin {
+    margin: 0pt;
+}

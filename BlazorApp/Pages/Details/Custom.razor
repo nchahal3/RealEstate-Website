@@ -1,0 +1,17 @@
+<div class="scroll" style="height:80%">
+    @if(House.CustomFields != null)
+    {
+        @foreach (var customField in House.CustomFields)
+        {
+            <button type="button" class="collapsible">@customField.Title</button>
+            <div>
+                <p>@customField.Description</p>
+            </div>
+        }
+    }
+</div>
+
+@code {
+    [Parameter]
+    public HouseListing House { get; set; }
+}

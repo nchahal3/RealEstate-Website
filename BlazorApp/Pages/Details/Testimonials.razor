@@ -1,0 +1,31 @@
+
+<div class="heading-text buffered">Neighbourhood Testimonials</div>
+<div class="scroll" style="height:55%">
+    @if(testimonials != null)
+    {
+        @foreach (var testimonial in testimonials)
+        {
+            <TestimonialEntry Name=@testimonial.Name Description=@testimonial.Description ImgSrc=@testimonial.ImgSrc></TestimonialEntry>
+        }
+    }
+</div>
+<a href="" @onclick="ShowModal" @onclick:preventDefault>
+<div style="white-space: nowrap; float: right; margin-right:30px;">
+    <div class="bold-text" style="display: inline-block">Add a testimonial</div>
+    <img style="display: inline-block" src="Images/plus.png" height=20 width=20>
+</div>
+</a>
+
+@code {
+    List<Testimonial> testimonials;
+    HttpClient httpClient = new HttpClient();
+    protected override async Task OnInitializedAsync()
+    {
+        testimonials = await httpClient.GetFromJsonAsync<List<Testimonial>>("http://localhost:5211/testimonials.json");
+    }
+
+    [CascadingParameter] public IModalService Modal { get; set; } = default!;
+
+    void ShowModal() => Modal.Show<TestimonialModal>("Create a Testimonial");
+
+}

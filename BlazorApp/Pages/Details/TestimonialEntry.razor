@@ -1,0 +1,20 @@
+<link href="css/Details/details-testimonial.css" rel="stylesheet" />
+
+<div class="testimonial-wrapper" style="margin-bottom:30px;">
+    <div class="testimonial-profile">
+        <img src=@ImgSrc height=50 width=50>
+    </div>
+    <div class="testimonial-text">
+        <div style="font-weight:bold">@Name</div>
+        <div>@Description</div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string Description { get; set; } = "";
+    [Parameter]
+    public string ImgSrc { get; set; } = "";
+    [Parameter]
+    public string Name { get; set; } = "";
+}

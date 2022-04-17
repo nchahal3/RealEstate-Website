@@ -1,0 +1,39 @@
+@page "/createRealtorAccount"
+
+<link href="css/CreateAccount/CreateAccount.css" rel="stylesheet" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Create Account Page </title>  
+<body>    
+<div class="container1">
+  <img src="/Images/skyscraper.jpg" alt="Snow" style="width:100%;height:300px">
+  <div class="centered"><h1>CREATE REALTOR ACCOUNT</h1></div>
+</div>
+    <form>  
+        <div class="row">   
+            <div class = "column" style = "background-color:white;">
+                <label>First Name</label>   
+                <input type="text" placeholder="Enter Username" name="username" required >  <br>
+                <label>Email</label>   
+                <input type="text" placeholder="Enter Username" name="username" required >  <br>
+                <label>Profile Image</label> 
+                <input type="file" id="actual-btn" hidden/>
+                <label class = "name" for="actual-btn">Choose File</label>
+                
+                <span id="file-chosen">No file chosen</span>
+            </div>
+             <div class = "column" style = "background-color:white;">
+                <label>Last Name</label>   
+                <input type="text" placeholder="Enter Username" name="username" required >  <br>
+                <label>Password</label>  
+                <input type="password" placeholder="Enter Password" name="password" required >  <br>
+                <label>Confirm Password</label>  
+                <input type="text" placeholder="Enter Password" name="password" required >  <br>
+                <a href="/createRealtorAccount2">
+                <button type="submit" class="signupbtn" >Next step</button></a>
+            </div>
+    
+            </div>   
+    </form>     
+</body>     
+

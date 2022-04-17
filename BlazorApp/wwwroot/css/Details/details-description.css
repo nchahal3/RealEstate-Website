@@ -1,0 +1,31 @@
+.detail-wrapper {
+    display: grid;
+    grid-template-columns: 37.5% 37.5% 25%;
+    grid-template-rows: 20% 85%;
+  }
+
+  .detail-header {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    border-width: 0 10px;
+    border: solid rgb(185, 185, 185);
+  }
+
+  .detail-description {
+    grid-column: 1;
+    grid-row: 2;
+    border-width: 0 10px;
+    border: solid rgb(185, 185, 185);
+  }
+
+  .detail-custom {
+    grid-column: 2;
+    grid-row: 2;
+    border-width: 0 10px;
+    border: solid rgb(185, 185, 185);
+  }
+
+  .detail-externals {
+    grid-column: 3;
+    grid-row: 1 / 3;
+  }

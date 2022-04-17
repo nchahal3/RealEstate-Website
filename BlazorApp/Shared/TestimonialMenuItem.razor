@@ -1,0 +1,18 @@
+@using Microsoft.AspNetCore.Components.Web
+@typeparam TItem
+<a class="dropdown-item" Item="@Item" @onclick="ShowModal">@ChildContent(Item)</a>
+
+@code {
+    [CascadingParameter(Name="Dropdown")]
+    public Dropdown<TItem> Dropdown {get;set;}
+
+    [Parameter]
+    public TItem Item{get;set;}
+    [Parameter]
+    public RenderFragment<TItem> ChildContent {get;set;}
+
+    [CascadingParameter] public IModalService Modal { get; set; } = default!;
+
+    public void ShowModal() => Modal.Show<TestimonialModal>("Create a Testimonial");
+
+}

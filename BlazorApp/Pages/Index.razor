@@ -1,0 +1,12 @@
+﻿@page "/"
+@inject NavigationManager NavManager
+
+<PageTitle>Bond Estate Home</PageTitle>
+
+@code {
+    HttpClient httpClient = new HttpClient();
+    protected override async Task OnInitializedAsync()
+    {
+        NavManager.NavigateTo("/home");
+    }
+}

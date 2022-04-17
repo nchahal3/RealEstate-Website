@@ -1,0 +1,22 @@
+@using Microsoft.AspNetCore.Components.Web
+@typeparam TItem
+    <a @onclick="e => this.show=!this.show " href="#" @onclick:preventDefault><img src="/Images/menu.png" width="60" height="60" style="margin-left:20px; margin-right:30px;"></a>
+    <CascadingValue name="Dropdown" Value="@this">
+    <div class="dropdown-menu @(show? "show":"")" style="position:absolute; top:80px; right:10px;">
+        @ChildContent
+    </div>
+    </CascadingValue>
+
+@code {
+    [Parameter]
+    public RenderFragment InitialTip{get;set;}
+    [Parameter]
+    public RenderFragment ChildContent{get;set;}
+    [Parameter]
+    public EventCallback<TItem> OnSelected {get;set;}
+
+    private bool show = false;
+    private RenderFragment Tip ;
+
+    protected override void OnInitialized(){ this.Tip = InitialTip; }
+}

@@ -1,0 +1,10 @@
+.pictures-wrapper {
+    display: grid;
+    grid-template-columns: 66% 30%
+}
+.pictures-main {
+    grid-column: 1;
+}
+.pictures-others {
+    grid-column: 2;
+}

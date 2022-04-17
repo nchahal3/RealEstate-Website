@@ -1,0 +1,40 @@
+<link href="css/Listings/candidate.css" rel="stylesheet" />
+
+<div class="candidate-wrapper" style="height: 100%; margin-left: -10vh; padding: 20px;">
+    <div class="candidate-image">
+        <img src=@House.MainImgSrc style="height:94%;">
+    </div>
+    <div class="candidate-thumbnails">
+        <img src=@House.MainImgSrc style="width:100%; padding-bottom: 10px">
+        <img src=@House.MainImgSrc style="width:100%; padding-bottom: 10px">
+        <img src=@House.MainImgSrc style="width:100%; padding-bottom: 10px">
+    </div>
+    <div class="candidate-main-details">
+        <div class="bold-text">
+            Current Ranking: @House.Ranking
+        </div>
+        <div class="bold-text">
+            Address: @House.Address
+        </div>
+        <div class="bold-text">
+            Price: @House.Price
+        </div>
+        <div style="font-size:20px">
+            @House.Bedrooms Bedrooms, @House.Bathrooms Bath, @House.SQFT SQFT, @House.PrimaryDetails
+        </div>
+        <br>
+        <div>
+            @House.LongDetails
+        </div>
+    </div>
+    <div class="candidate-more-details">
+        <a href="/details/@House.Id"><button type="button" class="btn btn-secondary float-end" style="font-size:20px;">More Details</button></a>
+        <a href="/progress"><button type="button" class="btn btn-primary float-end" style="font-size:20px; margin-right: 20px">Progress</button></a>
+        <a href="/favorites"><button type="button" class="btn btn-danger float-start" style="font-size:20px; margin-right: 20px">Close</button></a>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public HouseListing House { get; set; }
+}

@@ -1,0 +1,139 @@
+<link href="css/Listings/favorites-list-entry.css" rel="stylesheet" />
+
+@if(ListDetails != null)
+{
+<div class="listing-entry-wrapper" style="margin-bottom: 10px;">
+    <div class="listing-entry-rating">
+        <h1 style="font-weight: bold; padding-left: 65px">@ListDetails.Ranking</h1>
+        <a onclick=@invokeRank><img src="Images/upvote.png" height=50 width=70 style="margin-left: 40px"></a>
+        <br>
+        <br>
+        <a onclick=@invokeRank><img src="Images/downvote.png" height=50 width=70 style="margin-left: 40px"></a>
+    </div>
+    <div class="listing-entry-image">
+        <a href="/favoritesCompare/@ListDetails.Id" style="text-decoration: none; color: black;">
+        <img src=@ListDetails.MainImgSrc style="padding: 10px; height: 100%; width: 100%; object-fit: contain">
+        </a>
+    </div>
+    <div class="listing-entry-details">
+        <div class="bold-text buffered">
+            @ListDetails.Address
+        </div>
+        @if(Candidate != null && Candidate.Value < ListDetails.Value)
+        {
+            <div class="heading-text buffered" style="margin-top:-20px; color:red">
+                @ListDetails.Price
+            </div>
+        }
+        else if(Candidate != null && Candidate.Value > ListDetails.Value)
+        {
+            <div class="heading-text buffered" style="margin-top:-20px; color:green">
+                @ListDetails.Price
+            </div>
+        }
+        else
+        {
+            <div class="heading-text buffered" style="margin-top:-20px; color:black">
+                @ListDetails.Price
+            </div>
+        }
+        <div class="input-group" style="margin-left:20px; margin-top: 20px;">
+            @if(Candidate != null && Candidate.Bedrooms > ListDetails.Bedrooms)
+            {
+                <div style="margin-right:20px; font-weight: bold; color: red">
+                    Bedrooms: @ListDetails.Bedrooms
+                </div>
+            }
+            else if(Candidate != null && Candidate.Bedrooms < ListDetails.Bedrooms)
+            {
+                <div style="margin-right:20px; font-weight: bold; color: green">
+                    Bedrooms: @ListDetails.Bedrooms
+                </div>
+            }
+            else
+            {
+                <div style="margin-right:20px; font-weight: bold; color: black">
+                    Bedrooms: @ListDetails.Bedrooms
+                </div>
+            }
+            @if(Candidate != null && Candidate.Bathrooms > ListDetails.Bathrooms)
+            {
+                <div style="margin-right:20px; font-weight: bold; color:red">
+                    Bathrooms: @ListDetails.Bathrooms
+                </div>
+            }
+            else if(Candidate != null && Candidate.Bathrooms < ListDetails.Bathrooms)
+            {
+                <div style="margin-right:20px; font-weight: bold; color:green">
+                    Bathrooms: @ListDetails.Bathrooms
+                </div>
+            }
+            else
+            {
+                <div style="margin-right:20px; font-weight: bold; color:black">
+                    Bathrooms: @ListDetails.Bathrooms
+                </div>
+            }
+            @if(Candidate != null && Candidate.SQFT > ListDetails.SQFT)
+            {
+                <div style="margin-right:20px; font-weight: bold; color:red">
+                    SQFT: @ListDetails.SQFT
+                </div>
+            }
+            else if(Candidate != null && Candidate.SQFT < ListDetails.SQFT)
+            {
+                <div style="margin-right:20px; font-weight: bold; color:green">
+                    SQFT: @ListDetails.SQFT
+                </div>
+            }
+            else
+            {
+                <div style="margin-right:20px; font-weight: bold; color:black">
+                    SQFT: @ListDetails.SQFT
+                </div>
+            }
+        </div>
+        <div class="buffered">
+            @ListDetails.LongDetails
+        </div>
+    </div>
+    <div class="listing-entry-actions">
+        <div class="share-center" style="margin-top:20px;">
+            <a onclick=@invokeRemove><img src="Images/removeFavorite.png" height=60 width=60></a>
+        </div>
+        <br>
+        <div class="share-center">
+            <a href="/external"><img src="Images/share.png" height=60 width=60></a>
+        </div>
+    </div>
+</div>
+}
+
+@code {
+    [Parameter]
+    public EventCallback<int> OnRemove { get; set; }
+    [Parameter]
+    public EventCallback OnRank { get; set; }
+    [Parameter]
+    public HouseListing ListDetails { get; set; }
+    [Parameter]
+    public HouseListing Candidate { get; set; }
+
+    [CascadingParameter] public IModalService Modal { get; set; } = default!;
+    void ShowModal(string address)
+    {
+        var parameters = new ModalParameters();
+        parameters.Add(nameof(ConfirmUnlistModal.Address), address);
+        Modal.Show<ConfirmUnlistModal>("Confirm Action", parameters);
+    }
+
+    private async Task invokeRemove()
+    {
+        await OnRemove.InvokeAsync(ListDetails.Id);
+    }
+
+    private async Task invokeRank()
+    {
+        await OnRank.InvokeAsync();
+    }
+}

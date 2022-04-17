@@ -1,0 +1,24 @@
+.listings-wrapper {
+  flex-grow: 1;
+  margin: auto;
+  width: 100%;
+}
+
+
+.listing-list {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+}
+
+.listing-scroll {
+  height:100%;
+  margin: 0pt;
+  overflow-y: scroll;
+}
+
+.container {
+  width: 100%;
+  padding: 0pt;
+}
+

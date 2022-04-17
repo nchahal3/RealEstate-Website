@@ -1,0 +1,14 @@
+<div class="buffered">
+    <div class="bold-text">
+        @House.Bedrooms Bedrooms, @House.Bathrooms Bath, @House.SQFT SQFT, @House.PrimaryDetails
+    </div>
+    <br>
+    <div>
+        @House.LongDetails
+    </div>
+</div>
+
+@code {
+[Parameter]
+public HouseListing House { get; set; }
+}

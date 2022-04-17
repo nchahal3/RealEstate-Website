@@ -1,0 +1,24 @@
+@inject Blazored.SessionStorage.ISessionStorageService sessionStorage
+@using Newtonsoft.Json
+
+
+<div>
+    @if(realtors != null)
+    {
+        @foreach (var realtor in realtors)
+        {
+            <RealtorCard RealtorDetails=@realtor></RealtorCard>
+        }
+    }
+</div>
+
+@code {
+    List<Realtors> realtors;
+
+    HttpClient httpClient = new HttpClient();
+
+    protected override async Task OnInitializedAsync()
+    {
+        realtors = await httpClient.GetFromJsonAsync<List<Realtors>>("http://localhost:5211/realtors.json");
+    }
+}

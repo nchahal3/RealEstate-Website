@@ -1,0 +1,13 @@
+<link href="css/Details/details-description.css" rel="stylesheet" />
+
+<div class="detail-wrapper" style="width: 100%; height: 95%;">
+  <div class="detail-header lightly-smooth-corners"><nav class="navbar" style="margin-top:-15px"><div class="heading-text buffered">@House.Address</div><div class="heading-text buffered">@House.Price</div></nav></div>
+  <div class="detail-description lightly-smooth-corners"><GeneralDescription House=@House></GeneralDescription></div>
+  <div class="detail-custom lightly-smooth-corners"><Custom House=@House></Custom></div>
+  <div class="detail-external lightly-smooth-corners"><ExternalLinks></ExternalLinks></div>
+</div>
+
+@code {
+  [Parameter]
+  public HouseListing House { get; set; }
+}

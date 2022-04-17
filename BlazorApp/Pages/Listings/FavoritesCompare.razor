@@ -1,0 +1,54 @@
+@page "/favoritesCompare/{listingId:int}"
+
+<link href="css/Listings/list-view-compare.css" rel="stylesheet" />
+
+<div class="listing-wrapper" style="width:95vw; height:95vh">
+    @if(displayListing != null)
+    {
+    <div class="listing-search-full"><ListingSearch></ListingSearch></div>
+    <div class="listing-list"><FavoritesList Candidate=@displayListing></FavoritesList></div>
+    <div class="candidate"><Candidate House=@displayListing></Candidate></div>
+    }
+</div>
+
+@code{
+    [Parameter]
+    public int listingId { get; set; } = 0;
+
+    List<HouseListing> listings;
+
+    HttpClient httpClient = new HttpClient();
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+    }
+
+    HouseListing displayListing;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        displayListing = getCurrentListing(listingId);
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        listings = await httpClient.GetFromJsonAsync<List<HouseListing>>("http://localhost:5211/myListings.json");
+        displayListing = getCurrentListing(listingId);
+    }
+
+    HouseListing getCurrentListing(int id)
+    {
+      HouseListing currentListing = null;
+
+      foreach(var listing in listings)
+      {
+        if(listing.Id == listingId)
+        {
+          currentListing = listing;
+        }
+      }
+      return currentListing;
+    }
+}
+

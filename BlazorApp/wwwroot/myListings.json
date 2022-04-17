@@ -1,0 +1,110 @@
+[
+    {
+        "Id": 1,
+        "Address": "100 Street Ave. NW",
+        "Price": "$1,000,000",
+        "Value": 1000,
+        "PrimaryDetails": "Backyard, Porch",
+        "LongDetails": "Fully developed and immaculately maintained home, is situated on a quiet street close to all amenities. The open concept main floor features neutral paint throughout, beautiful hardwood flooring. Close to all amenities including schools, playgrounds, VIVO, extensive shopping, Landmark movie theatre and more!",
+        "MainImgSrc": "Images/house.jpg",
+        "Images": [],
+        "CustomFields": [
+            {
+                "Title": "Renovations",
+                "Description": "Renovations happened here",
+                "Expanded": false
+            },
+            {
+                "Title": "Features",
+                "Description": "Renovations happened here",
+                "Expanded": false
+            }
+        ],
+        "Favorited": true,
+        "Ranking": 1,
+        "Bedrooms": 4,
+        "Bathrooms": 2,
+        "SQFT": 1500
+    },
+    {
+        "Id": 2,
+        "Address": "90 Street Ave. SW",
+        "Price": "$900,000",
+        "Value": 900,
+        "PrimaryDetails": "Balcony",
+        "LongDetails": "Fully developed and immaculately maintained home, is situated on a quiet street close to all amenities. The open concept main floor features neutral paint throughout, beautiful hardwood flooring. Close to all amenities including schools, playgrounds, VIVO, extensive shopping, Landmark movie theatre and more!",
+        "MainImgSrc": "Images/house2.jpg",
+        "Images": [],
+        "CustomFields": [
+            {
+                "Title": "Renovations",
+                "Description": "Renovations happened here",
+                "Expanded": false
+            },
+            {
+                "Title": "Features",
+                "Description": "Renovations happened here",
+                "Expanded": false
+            }
+        ],
+        "Favorited": true,
+        "Ranking": 2,
+        "Bedrooms": 3,
+        "Bathrooms": 2,
+        "SQFT": 1000
+    },
+    {
+        "Id": 3,
+        "Address": "80 Street Ave. NE",
+        "Price": "$800,000",
+        "Value": 800,
+        "PrimaryDetails": "Deck, Backyard",
+        "LongDetails": "Fully developed and immaculately maintained home, is situated on a quiet street close to all amenities. The open concept main floor features neutral paint throughout, beautiful hardwood flooring. Close to all amenities including schools, playgrounds, VIVO, extensive shopping, Landmark movie theatre and more!",
+        "MainImgSrc": "Images/house3.jpg",
+        "Images": [],
+        "CustomFields": [
+            {
+                "Title": "Renovations",
+                "Description": "Renovations happened here",
+                "Expanded": false
+            },
+            {
+                "Title": "Features",
+                "Description": "Renovations happened here",
+                "Expanded": false
+            }
+        ],
+        "Favorited": true,
+        "Ranking": 3,
+        "Bedrooms": 2,
+        "Bathrooms": 1,
+        "SQFT": 750
+    },
+    {
+        "Id": 4,
+        "Address": "70 Street Ave. SE",
+        "Price": "$700,000",
+        "Value": 700,
+        "PrimaryDetails": "Duplex",
+        "LongDetails": "Fully developed and immaculately maintained home, is situated on a quiet street close to all amenities. The open concept main floor features neutral paint throughout, beautiful hardwood flooring. Close to all amenities including schools, playgrounds, VIVO, extensive shopping, Landmark movie theatre and more!",
+        "MainImgSrc": "Images/house4.jpg",
+        "Images": [],
+        "CustomFields": [
+            {
+                "Title": "Renovations",
+                "Description": "Renovations happened here",
+                "Expanded": false
+            },
+            {
+                "Title": "Features",
+                "Description": "Renovations happened here",
+                "Expanded": false
+            }
+        ],
+        "Favorited": true,
+        "Ranking": 4,
+        "Bedrooms": 1,
+        "Bathrooms": 1,
+        "SQFT": 500
+    }
+]

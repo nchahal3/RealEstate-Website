@@ -1,0 +1,52 @@
+@page "/details/{listingId:int}"
+@using Blazored.Modal
+
+<link href="css/Details/details.css" rel="stylesheet" />
+
+<div class="wrapper" style="height:95vh">
+  @if(displayListing != null)
+  {
+    <div class="pictures smooth-corners"><Pictures House=@displayListing></Pictures></div>
+    <div class="status smooth-corners"><Status House=@displayListing></Status></div>
+    <div class="map smooth-corners"><MiniMap></MiniMap></div>
+    <div class="description smooth-corners"><Description House=@displayListing></Description></div>
+    <div class="testimonials smooth-corners"><Testimonials></Testimonials></div>
+  }
+</div>
+
+@code{
+    [Parameter]
+    public int listingId { get; set; } = 0;
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+    }
+
+    List<HouseListing> listings;
+
+    HttpClient httpClient = new HttpClient();
+
+    HouseListing displayListing;
+
+    protected override async Task OnInitializedAsync()
+    {
+        listings = await httpClient.GetFromJsonAsync<List<HouseListing>>("http://localhost:5211/myListings.json");
+        displayListing = getCurrentListing(listingId);
+    }
+
+    HouseListing getCurrentListing(int id)
+    {
+      HouseListing currentListing = null;
+
+      foreach(var listing in listings)
+      {
+        if(listing.Id == listingId)
+        {
+          currentListing = listing;
+        }
+      }
+      return currentListing;
+    }
+}
+

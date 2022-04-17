@@ -1,0 +1,12 @@
+.listing-search-wrapper {
+    display: grid;
+    grid-template-columns: 33% 66%;
+  }
+
+  .listing-search {
+    grid-column: 1;
+  }
+
+  .listing-sort {
+    grid-column: 2;
+  }

@@ -1,0 +1,12 @@
+.testimonial-wrapper {
+    display: grid;
+    grid-template-columns: 15% 85%
+}
+.testimonial-profile {
+    grid-column: 1;
+    background-color: white;
+}
+.testimonial-text {
+    grid-column: 2;
+    background-color: white;
+}

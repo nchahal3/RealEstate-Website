@@ -1,0 +1,64 @@
+<link href="css/Listings/listing-search.css" rel="stylesheet" />
+
+<div class="listing-search-wrapper" style="">
+    <div class="search-container">
+        <nav class="navbar" style="height:100px; width: 150vh">
+            <div class="input-group" style="margin-left:30px; margin-top: 20px;">
+                <div>
+                    <div class="bold-text">
+                        Similar Qualities:
+                    </div>
+                    <div class="bold-text">
+                        Relative Importance:
+                    </div>
+                </div>
+                <div style="margin-left:50px">
+                    <div class="form-check form-check-inline" style="font-size:20px">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" checked>
+                    <label class="form-check-label" for="inlineCheckbox1">Price</label>
+                    </div>
+                    <br>
+                    <input type="range" class="form-range" id="customRange1" value=0 style="width: 150px;">
+                </div>
+                <div style="margin-left:30px;">
+                    <div class="form-check form-check-inline" style="font-size:20px">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" checked>
+                    <label class="form-check-label" for="inlineCheckbox2">Sq Footage</label>
+                    </div>
+                    <br>
+                    <input type="range" class="form-range" id="customRange1" value=0 style="width: 150px;">
+                </div>
+                <div style="margin-left:30px;">
+                    <div class="form-check form-check-inline" style="font-size:20px">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option3" checked>
+                    <label class="form-check-label" for="inlineCheckbox3"># of Rooms</label>
+                    </div>
+                    <br>
+                    <input type="range" class="form-range" id="customRange1" value=0 style="width: 150px;">
+                </div>
+                <div style="margin-left:30px;">
+                    <div class="form-check form-check-inline" style="font-size:20px">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option4" checked>
+                    <label class="form-check-label" for="inlineCheckbox4">Nearby Amenities</label>
+                    </div>
+                    <br>
+                    <input type="range" class="form-range" id="customRange1" value=0 style="width: 150px;">
+                </div>
+                <button class="btn btn-success bold-text" style="border-radius:5px; font-size:20px; margin-left:20px">Refresh List</button>
+                <div class="bold-text" style="margin-left:30px; margin-top:15px">
+                    Found 6 Similar Listings
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+
+@code {
+    
+    private void OnSelected(string selection)
+    {
+        Console.WriteLine(selection);
+    }
+
+}

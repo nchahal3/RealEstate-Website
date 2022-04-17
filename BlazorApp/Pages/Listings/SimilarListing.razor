@@ -1,0 +1,43 @@
+<link href="css/listings/similar-list-entry.css" rel="stylesheet" />
+
+@if(ListDetails != null)
+{
+<div class="similar-entry-wrapper" style="margin-bottom: 10px;">
+    <div class="similar-entry-image">
+        <img src=@ListDetails.MainImgSrc style="padding: 10px; height: 100%; width: 100%; object-fit: contain">
+    </div>
+    <div class="similar-entry-details">
+        <div class="bold-text buffered">
+            @ListDetails.Address
+        </div>
+        <div class="heading-text buffered" style="margin-top:-20px">
+            @ListDetails.Price
+        </div>
+        <div class="buffered">
+            @ListDetails.LongDetails
+        </div>
+    </div>
+    <div class="similar-entry-actions">
+        <div class="share-center" style="margin-top:20px;">
+            <img src="Images/addFavorite.png" height=60 width=60>
+        </div>
+        <br>
+        <div class="share-center">
+            <a href="/details/1"><button type="button" class="btn btn-secondary float-end" style="font-size:20px;">More Details</button></a>
+        </div>
+    </div>
+</div>
+}
+
+@code {
+    [Parameter]
+    public HouseListing ListDetails { get; set; }
+
+    [CascadingParameter] public IModalService Modal { get; set; } = default!;
+    void ShowModal(string address)
+    {
+        var parameters = new ModalParameters();
+        parameters.Add(nameof(ConfirmUnlistModal.Address), address);
+        Modal.Show<ConfirmUnlistModal>("Confirm Action", parameters);
+    }
+}
